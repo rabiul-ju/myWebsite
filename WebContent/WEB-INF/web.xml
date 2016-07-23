@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>servelet.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>BlogServlet</servlet-name>
+    <servlet-class>servelet.BlogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BlogServlet</servlet-name>
+    <url-pattern>/BlogServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>ShowBlog</servlet-name>
+  	<servlet-class>servelet.ShowBlog</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>ShowBlog</servlet-name>
+    <url-pattern>/ShowBlog</url-pattern>
+  </servlet-mapping>
+</web-app>
